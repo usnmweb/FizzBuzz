@@ -1,0 +1,58 @@
+* {
+  color: white;
+  background-color: #353535;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+}
+
+header div {
+  display: grid;
+}
+
+input,
+button {
+  background-color: #fff;
+  color: black;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100vw;
+  height: 80vh;
+}
+.card {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 50vw;
+  height: 50vh;
+  background: rgb(228, 81, 24);
+  padding: 3rem;
+  border: 1px solid yellow;
+}
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+li {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  list-style: none;
+  min-width: 35px;
+  border: 1px solid brown;
+
+  width: fit-content;
+}
+
+.titolo {
+  text-transform: uppercase;
+}
