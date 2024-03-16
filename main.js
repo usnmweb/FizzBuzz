@@ -1,24 +1,3 @@
-/* inputs value */
-let n = document
-  .getElementById("nmax")
-  .addEventListener("change", function (event) {
-    console.log("n", event.target.value);
-  });
-
-let fizz = document
-  .getElementById("fizz")
-  .addEventListener("change", function (event) {
-    console.log("f", event.target.value);
-  });
-
-let buzz = document
-  .getElementById("buzz")
-  .addEventListener("change", function (event) {
-    console.log("b", event.target.value);
-  });
-
-let result = calcolator(n, fizz, buzz);
-
 // -------------------------
 
 function calcolator(n, fizz, buzz) {
@@ -32,11 +11,20 @@ function calcolator(n, fizz, buzz) {
   return arr;
 }
 
-const lista = document.getElementById("list");
+function start() {
+  /* inputs value */
 
-for (let i = 0; i < result.length; i++) {
-  let li = document.createElement("li");
-  li.textContent = result[i];
+  const n = parseInt(document.getElementById("nmax").value);
+  const fizz = parseInt(document.getElementById("fizz").value);
+  const buzz = parseInt(document.getElementById("buzz").value);
+  const lista = document.getElementById("list");
+  lista.innerHTML = "";
 
-  lista.appendChild(li);
+  let result = calcolator(n, fizz, buzz);
+  for (let i = 0; i < result.length; i++) {
+    let li = document.createElement("li");
+    li.textContent = result[i];
+
+    lista.appendChild(li);
+  }
 }
