@@ -19,40 +19,38 @@ button {
   color: black;
 }
 main {
-  display: flex;
+  display: grid;
   justify-content: center;
-  align-content: center;
   width: 100vw;
   height: 80vh;
 }
 .card {
   display: flex;
-  justify-content: center;
-  align-content: center;
   width: 50vw;
-  height: 50vh;
-  background: rgb(228, 81, 24);
+  height: auto;
+
   padding: 3rem;
-  border: 1px solid yellow;
+  border: 29px solid yellow;
 }
 ul {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
   padding: 1rem;
+
+  max-height: auto;
 }
 
 li {
   display: flex;
   justify-content: center;
-  text-align: center;
+  align-items: center;
   list-style: none;
-  min-width: 35px;
+  min-width: 85px;
+  min-height: 55px;
   border: 1px solid brown;
-
-  width: fit-content;
 }
 
-.titolo {
+.title {
   text-transform: uppercase;
 }

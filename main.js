@@ -28,3 +28,14 @@ function start() {
     lista.appendChild(li);
   }
 }
+
+window.onload = function () {
+  let title = document.title;
+  let index = 0;
+
+  setInterval(function () {
+    index = (index + 1) % (title.length + 1);
+    document.title =
+      title.substring(index, title.length) + title.substring(0, index);
+  }, 100);
+};
