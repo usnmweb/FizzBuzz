@@ -11,7 +11,7 @@ function calcolator(n, fizz, buzz) {
   return arr;
 }
 
-function start() {
+function start(el) {
   /* inputs value */
 
   const n = parseInt(document.getElementById("nmax").value);
@@ -27,7 +27,24 @@ function start() {
 
     lista.appendChild(li);
   }
+
+  let nnone = el.parentElement.parentElement;
+  nnone.classList.add("none");
+
+  let show = document.getElementsByClassName("result")[0];
+
+  show.classList.remove("none");
 }
+
+function back(el) {
+  let back = el.parentElement;
+  back.classList.add("result", "none");
+
+  let show = document.getElementsByClassName("config")[0];
+  show.classList.remove("none");
+}
+
+/* Title motion */
 
 window.onload = function () {
   let title = document.title;

@@ -3,14 +3,21 @@
   background-color: #353535;
 }
 
-header {
-  display: flex;
-  justify-content: space-around;
-  padding: 2rem;
+.config {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+
+  width: 50vw;
+  height: auto;
+
+  padding: 3rem;
+  border: 29px solid yellow;
 }
 
-header div {
+.config div {
   display: grid;
+  margin: 1.5rem;
 }
 
 input,
@@ -19,10 +26,13 @@ button {
   color: black;
 }
 main {
-  display: grid;
+  display: flex;
   justify-content: center;
   width: 100vw;
   height: 80vh;
+}
+.back {
+  border-style: double;
 }
 .card {
   display: flex;
@@ -53,4 +63,8 @@ li {
 
 .title {
   text-transform: uppercase;
+}
+
+.none {
+  display: none;
 }

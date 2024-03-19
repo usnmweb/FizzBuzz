@@ -12,16 +12,23 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <div><span>NMax</span><input type="number" id="nmax" /></div>
-      <div><span>Fizz</span><input type="number" id="fizz" /></div>
-      <div><span>Buzz</span><input type="number" id="buzz" /></div>
-      <div><button onclick="start()">CALCULATE</button></div>
-    </header>
     <main>
-      <div class="card">
-        <ul id="list"></ul>
-      </div>
+      <section class="config">
+        <div>
+          <span>NMax</span>
+          <input type="number" id="nmax" />
+        </div>
+        <div><span>Fizz</span><input type="number" id="fizz" /></div>
+        <div><span>Buzz</span><input type="number" id="buzz" /></div>
+        <div><button onclick="start(this)">CALCULATE</button></div>
+      </section>
+
+      <section class="result none">
+        <button onclick="back(this)">back</button>
+        <div class="card">
+          <ul id="list"></ul>
+        </div>
+      </section>
     </main>
     <script src="main.js"></script>
   </body>
